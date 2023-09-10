@@ -1,6 +1,6 @@
 {
   "name": "html-to-js-parser",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Convert HTML strings to Js object",
   "main": "index.js",
   "scripts": {
