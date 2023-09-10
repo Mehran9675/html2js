@@ -4,7 +4,6 @@
   "description": "Convert HTML strings to Js object",
   "main": "index.js",
   "scripts": {
-    "test": "./test.js"
   },
   "repository": {
     "type": "git",

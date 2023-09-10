@@ -31,7 +31,7 @@ const fillAttrs = makeMap(
 
 const special = makeMap("script,style");
 
-const HTMLParser = function (html, handler) {
+const parser = function (html, handler) {
   html = html.replace(/^<!DOCTYPE.+?>([ \r\n\t]+)?/i, "");
   let index,
     chars,
@@ -170,4 +170,4 @@ const HTMLParser = function (html, handler) {
   }
 };
 
-module.exports = HTMLParser;
+module.exports = parser;

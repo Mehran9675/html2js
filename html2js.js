@@ -1,10 +1,7 @@
-const HTMLParser = require("./htmlparser.js");
+const parser = require("./parser.js");
 
 function removeDOCTYPE(html) {
-  return html
-    .replace(/<\?xml.*\?>\n/, "")
-    .replace(/<!doctype.*\>\n/, "")
-    .replace(/<!DOCTYPE.*\>\n/, "");
+  return html.replace(/<!doctype.*\>\n/, "").replace(/<!DOCTYPE.*\>\n/, "");
 }
 
 function processStyle(styleValue = "", style = {}) {
@@ -23,7 +20,7 @@ function processStyle(styleValue = "", style = {}) {
   return style;
 }
 
-function html2json(html) {
+function html2js(html) {
   html = removeDOCTYPE(html);
   const bufArray = [];
   const results = {
@@ -31,7 +28,7 @@ function html2json(html) {
     child: [],
     parent: null,
   };
-  HTMLParser(html, {
+  parser(html, {
     start: function (tag, attrs, unary) {
       const node = {
         node: "element",
@@ -115,4 +112,4 @@ function html2json(html) {
   return results;
 }
 
-module.exports = html2json;
+module.exports = html2js;

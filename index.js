@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const fs = require("fs");
-const html2json = require("./html2json");
+const html2json = require("./html2js");
 
 const [file] = process.argv;
 
