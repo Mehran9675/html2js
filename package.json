@@ -1,13 +1,13 @@
 {
   "name": "html-to-js-parser",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Convert HTML strings to Js object",
   "main": "index.js",
   "scripts": {
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mehran9675/HTML-to-js.git"
+    "url": "https://github.com/Mehran9675/html2js"
   },
   "bin": {
     "html2json": "./index.js"
@@ -19,7 +19,7 @@
   "author": "Mehran Zahiroddini",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Mehran9675/HTML-to-js/issues"
+    "url": "https://github.com/Mehran9675/html2js/issues"
   },
-  "homepage": "https://github.com/Mehran9675/HTML-to-js#readme"
+  "homepage": "https://github.com/Mehran9675/html2js#readme"
 }
