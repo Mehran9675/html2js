@@ -1,11 +1,9 @@
 #!/usr/bin/env node
 const fs = require("fs");
-const html2json = require("./html2js");
+const html2js = require("./html2js");
 
-const [file] = process.argv;
+const args = process.argv;
+const html = fs.readFileSync(args[2], "utf8");
+console.log(JSON.stringify(html2js(html), null, 1));
 
-fs.readFile(file, (err, data) => {
-  console.log(JSON.stringify(data, null, 1));
-});
-
-module.exports = html2json;
+module.exports = html2js;
